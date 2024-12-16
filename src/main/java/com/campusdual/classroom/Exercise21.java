@@ -7,7 +7,7 @@ import java.util.TreeSet;
 public class Exercise21 {
 
   public static Set<String> createHashSet() {
-    Set<String> nuevoHashSet = new HashSet();
+    Set<String> nuevoHashSet = new HashSet<>();
     //Copio y pego los elementos a añadir en el set directamente del readme.md.
     //Reemplazo los "* " por una cadena vacía y separo cada elemento en un array de Strings con .split()
     String elementsEjercicio = "* ELEMENT KPRBC\n" +
@@ -20,7 +20,7 @@ public class Exercise21 {
             "* ELEMENT MAPTK\n" +
             "* ELEMENT GJXVE\n" +
             "* ELEMENT BAFGL";
-    String[] arrayElements = elementsEjercicio.replace("* ", "").split("[\n]");
+    String[] arrayElements = elementsEjercicio.replace("* ", "").split("\n");
     //Recorro los elementos del array y los voy añadiendo al set creado.
     for (String str: arrayElements){
       addElementToSet(nuevoHashSet, str);
@@ -30,7 +30,7 @@ public class Exercise21 {
   }
 
   public static Set<String> createTreeSet() {
-    Set<String> nuevoTreehSet = new TreeSet();
+    Set<String> nuevoTreehSet = new TreeSet<>();
     //Copio y pego los elementos a añadir en el set directamente del readme.md.
     //Reemplazo los "* " por una cadena vacía y separo cada elemento en un array de Strings con .split()
     String elementsEjercicio = "* ELEMENT KPRBC\n" +
@@ -43,7 +43,7 @@ public class Exercise21 {
             "* ELEMENT MAPTK\n" +
             "* ELEMENT GJXVE\n" +
             "* ELEMENT BAFGL";
-    String[] arrayElements = elementsEjercicio.replace("* ", "").split("[\n]");
+    String[] arrayElements = elementsEjercicio.replace("* ", "").split("\n");
     //Recorro los elementos del array y los voy añadiendo al set creado.
     for (String str: arrayElements){
       addElementToSet(nuevoTreehSet, str);
